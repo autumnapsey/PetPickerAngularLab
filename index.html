@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet Picker</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="petApp">
+	<h1>Pick Your Pet</h1>
+	<ul>
+		<li><a href="#/cat">Cat</a></li>
+		<li><a href="#/dog">Dog</a></li>
+		<li><a href="#/rabbit">Rabbit</a></li>
+		<li><a href="#/fish">Fish</a></li>
+		<li><a href="#/notarealpagename">Robot</a></li>
+	</ul>
+	<div ng-view=""></div>
+</body>
+</html>
