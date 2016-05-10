@@ -3,27 +3,27 @@ var petApp = angular.module('petApp',['ngRoute']);
 petApp.config(function($routeProvider){
 	$routeProvider
 	.when('/',{
-		templateUrl: '../cat.html',
+		templateUrl: '../animal/cat.html',
 		controller: 'catCtrl'
 	})
 	.when('/cat',{
-		templateUrl: '../cat.html',
+		templateUrl: '../animal/cat.html',
 		controller: 'catCtrl'
 	})
 	.when('/dog',{
-		templateUrl: '../dog.html',
+		templateUrl: '../animal/dog.html',
 		controller: 'dogCtrl'
 	})
 	.when('/rabbit',{
-		templateUrl: '../rabbit.html',
+		templateUrl: '../animal/rabbit.html',
 		controller: 'rabbitCtrl'
 	})
 	.when('/fish',{
-		templateUrl: '../fish.html',
+		templateUrl: '../animal/fish.html',
 		controller: 'fishCtrl'
 	})
 	.otherwise({
 		controller: '/error',
-		templateUrl: '../error.html'
+		templateUrl: '../animal/error.html'
 	});
 });
